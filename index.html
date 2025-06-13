@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="icon" type="image/x-icon" href="photos/icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+</head>   
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top ">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand" style="font-family: cursive;">NEWS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+              <ul class="navbar-nav  mb-2 mb-lg-0 ">
+            
+          <li><a  href="#india" class="nav-link active">India News</a></li>
+          <li><a href="#world" class=" nav-link active">World News</a></li>
+          <li><a  href="#sports" class="nav-link active">Sports News </a></li>
+                  
+                  <li class="nav-item dropdown">
+                      <a href="#dropdown" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">More Topics</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#astro" class="dropdown-item">Astrology</a></li>
+                          <li><a href="#ftt" class="dropdown-item">Fashion</a></li>
+                          <li><a href="#ftt" class="dropdown-item">Travel</a></li>
+                          <li><a href="#ftt" class="dropdown-item">Technology</a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a href="#subscribe" class="dropdown-item">Subscribe Now</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              </div>
+      </div>
+  </nav>
+
+   <section class="custom-section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h1>Welcome to Your News Source – Stay Informed!</h1>
+                <p>Discover the latest headlines and compelling stories that matter to you. Our in-depth analysis keeps you informed and engaged, no matter where you are.</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-light me-3">Learn More</a>
+                    <a href="#" class="btn btn-outline-secondary" onclick="togglePopup()">Sign Up</a>  
+                    <div id="popupOverlay" class="overlay-container">
+                      <div class="popup-box">
+                          <h2 style="color: black; font-family: 'Times New Roman', Times, serif;">SIGN UP</h2>
+                          <form class="form-container">
+                              <label class="form-label" for="email">Email:</label>
+                              <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required>
+             
+                              <label for="password" class="form-label">Password:</label>
+                              <input type="password" class="form-input" placeholder="Enter Your Password" id="password" name="password" required> 
+                              <button class="btn-submit" type="submit">Submit </button>
+                          </form>
+                          <button class="btn-close-popup" onclick="togglePopup()"> Close </button>
+                      </div>     
+                      </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>   
+
+    <section>
+      <div class="mysection">
+        <div class="owncontainer">
+          <div class="left-section">
+            <div class="zoom">
+              <img src="photos/trade.jpg" alt="tradde">
+            </div>
+              <h2>India’s goods trade deficit widens to $22.99 billion in January on higher imports</h2>
+              <p>INDIA</p>
+          </div>
+          <div class="right-section">
+              <div class="news-item">
+                  <h3>‘12 baje…’: Shiv Sena's Rahool Kanal makes big claim against Kunal Kamra over terror funds
+                  </h3>
+                  <p>Rahool Kanal announced he would request to shut down and demonetise Kunal Kamra's YouTube channel, share  ...
+                  </p>
+                  <span>6 Minutes</span>
+              </div>
+              <div class="news-item">
+                  <h3>2 Terrorists Killed, 5 Security Personnel Injured In Encounter In J&K's Kathua</h3>
+                  <p>It was not immediately clear whether it was the same group that had been evading an earlier cordon in Sanyal forest of....
+                  </p>
+                  <span>10 Minutes</span>
+              </div>
+              <div class="news-item">
+                  
+                  <h3>Visa fraud: U.S. embassy cancels 2,000 bot-booked appointments
+                  </h3>
+                  <p>The U.S. Embassy in India on Wednesday (March 27, 2025) said it has cancelled around 2,000 visa appointments made by bots.  
+                  </p>
+                  <span>12 Minutes</span>
+              </div>
+              <div class="news-item">
+                <h3>Cash Row | Bar Associations Urge CJI To Initiate Criminal Investigation Against Justice Yashwant Varma
+                </h3>
+                <p>"The Bar Associations places on record its appreciation of steps taken by the Chief Justice of India to embrace ...
+                </p>
+                <span>12 Minutes</span>
+            </div>
+          </div>
+      </div>
+      </div>     
+    </section>
+
+
+    <section class="post-section " id="india">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="justify-content-center zoom">&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="photos/12.jpg" alt="" style="height: 350px; width: 400px;">
+            </div>
+            <div class="post-content">
+              <div class="post-category">INDIA</div>
+              <h2 class="post-title">India's Got Latent: Fresh summon, Allahbadia's SC hearing on Tuesday.</h2>
+              <p class="post-excerpt">In the latest developments in the ‘India’s Got Latent' controversy, the Supreme Court on Monday listed podcaster Ranveer Allahbadia's plea against multiple FIRs for hearing on February 18, while the National Commission for Women (NCW) gave fresh dates to Allahbadia and others after they failed to appear for hearing on the day. Further, a fresh First Information Report (FIR) was reportedly filed against the group, while the Maharashtra Police's cyber cell rejected comedian Samay Raina's request for a virtual appearance, and asked Ranveer Allahbadia to join the investigation on February 24.</p>
+              <div class="post-author">
+                <span class="author-name">Arjun Rathod</span>&nbsp;&nbsp;
+                <span class="author-date">21 Feb 2025 - 4 min read</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="justify-content-center zoom">&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="photos/india.avif" alt="" style="height: 350px; ;">
+            </div>
+            <div class="post-content">
+              <div class="post-category">INDIA</div>
+              <h2 class="post-title">India to seek tariff reprieve in meeting with US officials.</h2>
+              <p class="post-excerpt">India will request an exemption from US reciprocal tariffs during trade negotiations with US officials this week. Discussions will focus on forming a bilateral trade agreement. India has already reduced some import taxes and is considering further reductions to meet US concerns.rendan Lynch, US assistant trade representative for South and Central Asia, and a team of officials will visit India from March 25-29 as part of ongoing trade discussions, the US embassy in New Delhi said in a statement Monday.</p>
+              <div class="post-author">
+                <span class="author-name">Shiva Prasad</span>&nbsp;&nbsp;
+                <span class="author-date">21 Feb 2025 - 6 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+      
+      
+    <article class="post">
+    <section id="world">
+      <div class="row justify-content-center">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-category">WORLD</div>
+              <h5 class="card-title">Russia-US Talks: Zelensky In Saudi Too? Sidelined Europe Holds Urgent Meet</h5>
+              <p class="card-text">Russian foreign minister Sergei Lavrov and Putin's top aide Yuri Ushakov, along with a top-level delegation will meet US Secretary of State Marco Rubio, National Security Adviser Mike Waltz, Special Envoy Steve Witkoff and other top diplomats from the United States.
+                <br><span class="hidden-content">  As Saudi Arabia gears up to facilitate talks between top diplomats from Russia and the United States aimed at ending the war in Ukraine, Ukraine's President Volodymyr Zelensky is also traveling to the middle-eastern nation - but a day after the Russia-US meeting.
+                  As the world awaits the update from high-level meeting between Moscow and Washington, it is important to note that Ukraine has not been invited to these diplomatic talks, leaving European nations aghast with Washington's dramatic change in policy towards Moscow after the Trump administration took charge.  </span>
+              </p>   
+              <div class="actions">
+                <a class="button big btn btn-dark">Continue Reading</a>              
+              </div>                                
+            </div>
+          </div> 
+        </div>        
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-category">WORLD</div>
+              <h5 class="card-title">India Plans Vertical Take-Off Air Ambulances, IIT Startup Gets $1 Billion Deal</h5>
+              <p class="card-text">India Air Ambulance Services: An over $1 billion deal has been signed in this regard, according to which an IIT-Madras based electric aircraft startup - ePlane Company - will supply 788 air ambulances, which will be deployed across every district in India. <br><span class="hidden-content1">India will soon join a select-few nations globally to start an on-road vertical take-off and landing air ambulance service across the country. An over $1 billion deal has been signed in this regard, according to which an IIT-Madras based electric aircraft startup - ePlane Company - will supply 788 air ambulances.These 788 eVTOL or Electric Vertical Take-Off and Landing air ambulances will be delivered to ICATT - India's leading air ambulance firm, which will then deploy these aircraft across every district in India.</span>
+              </p>
+              <div class="actions">
+                <a  class="btn btn-dark button small">Continue Reading</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>    
+
+    <section id="sports" >
+      <div class="justify-content-center containerown" >
+        <div class="post">
+          <div class="post-image zoom" style="background-image:url(photos/13.jpg);"></div>
+          <div class="myp bold">
+          <p>SPORTS</p>
+          </div>
+          <h3>PCB breaks silence on missing Indian flag in Karachi, says ICC responsible for no tri-colour ahead of Champions Trophy
+          </h3>
+          <p>The Pakistan Cricket Board (PCB) has come up with an explanation after outrage erupted over the absence of the Indian flag at the National Stadium in Karachi, just days ahead of the Champions Trophy 2025. A video went viral on social media on Sunday, showcasing the flags of all competing nations but one being hoisted on the stadium's roof. The Indian flag was nowhere to be seen. </p>
+          <div class="author">
+            <img src="photos/user1.png" alt="Author 1">
+            <div class="author-info">
+              <span>John Smith</span>
+              <span>21 Feb 2025 - 6 min read</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-image zoom" style="background-image:url(photos/14.avif);"></div>
+          <div class="myp bold">
+          <p>SPORTS</p>
+          </div>
+          <h3>European football: Inter miss chance while racist chants halt La Liga game of Champions Trophy
+          </h3>
+          <p>Inter missed the chance to go top of Serie A as they lost 1-0 at Juventus on Sunday with Francisco Conceição scoring the decisive late goal in an action packed match.
+            The Portuguese winger sparked jubilation in the stadium after 74 minutes following some clever footwork in the box by Randal Kolo Muani before he found Conceição, who fired home.    </p>
+          <div class="author">
+            <img src="photos/user1.png" alt="Author 1">
+            <div class="author-info">
+              <span>John Smith</span>
+              <span>21 Feb 2025 - 6 min read</span>
+            </div>
+          </div>
+        </div>
+     
+        <div class="post">
+          <div class="post-image zoom" style="background-image:url(photos/17.avif);"></div>
+          <div class="myp bold">
+          <p>SPORTS</p>
+          </div>
+          <h3>Italian Report Claims McLaren Has Gained Around 0.5 Seconds With New F1 Car
+          </h3>
+          <p>Who’s going to be the fastest team of 2025? A very tough question to answer as we’re weeks away from even getting a glimpse of the cars in action and a reading of their realistic performance benchmark.
+            However, if reports from Italian website Autoracer are to be believed, it could very well be McLaren, who have reportedly found significant improvement in their already strong mechanical package, which helped them win the Constructors’ title last year. </p>
+          <div class="author">
+            <img src="photos/user1.png" alt="Author 1">
+            <div class="author-info">
+              <span>John Smith</span>
+              <span>21 Feb 2025 - 6 min read</span>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>  
+
+    <div class="containerown" id="ftt">
+      <div class="post">
+        <div class="post-image zoom" style="background-image:url(photos/rishi.jpg);"></div>
+        <div class="myp bold">
+        <p>Travel</p>
+        </div>
+        <h3>How to travel India on a shoestring budget
+        </h3>
+        <p>Opt for budget-friendly destinations like Rishikesh, Hampi, and Varanasi, where food, stays, and transport are cheap. </p>
+        <div class="author">
+          <img src="photos/user1.png" alt="Author 1">
+          <div class="author-info">
+            <span>John Smith</span>
+            <span>21 Feb 2025 - 6 min read</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-image zoom" style="background-image:url(photos/f3.webp);"></div>
+        <div class="myp bold">
+        <p>Fahion</p>
+        </div>
+        <h3>Swedish Brand Bite Studios to Open at Harrods</h3>
+        <p>The Swedish womenswear brand that works with natural and sustainable fabrics will open its first store in May in Harrods' newly refurbished womenswear department.
+        </p>
+        <div class="author">
+          <img src="photos/user.jpg" alt="Author 2">
+          <div class="author-info">
+            <span>Mark Taylor</span>
+            <span>21 FEb 2025 - 7 min read</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-image zoom" style="background-image:url(photos/tech.jpg);"></div>
+        <div class="myp bold">
+        <p>Tech</p>
+        </div>
+        <h3>Regulators must adapt as technology changes the insurance landscape</h3>
+        <p>Companies are using insurance technology, or insurtech, to prevent fraud, process claims promptly, and offer personalised services to customers.</p>
+        <div class="author">
+          <img src="photos/user1.png" alt="Author 2">
+          <div class="author-info">
+            <span>Eli Johnson</span>
+            <span>21 FEb 2025 - 5 min read</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="post">
+        <div class="post-image zoom" style="background-image:url(photos/f2.webp);"></div>
+        <div class="myp bold">
+        <p>Fahion</p>
+        </div>
+        <h3>Louis Vuitton Is Revved Up About Its Formula 1 Partnership</h3>
+        <p>The brand will kick off the racing season as title sponsor of the opening race in Melbourne on March 16 — and 24 trophy trunks are in the works.</p>
+        <div class="author">
+          <img src="photos/user.jpg" alt="Author 2">
+          <div class="author-info">
+            <span>Chris Brown</span>
+            <span>21 FEb 2025 - 3 min read</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="post">
+        <div class="post-image zoom" style="background-image:url(photos/tech1.jpg);"></div>
+        <div class="myp bold">
+        <p>Tech</p>
+        </div>
+        <h3>What is 6G and why is China racing ahead of US and Europe with the technology?</h3>
+        <p>Sixth-generation wireless communications will change the way we interact with the world but not all countries are embracing it</p>
+        <div class="author">
+          <img src="photos/user1.png" alt="Author 2">
+          <div class="author-info">
+            <span>Sara Lee</span>
+            <span>21 FEb 2025 - 4 min read</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-image zoom" style="background-image:url(photos/den.jpg);"></div>
+        <div class="myp bold">
+        <p>Travel</p>
+        </div>
+        <h3>Denmark changes advisory for transgenders travelling to US
+        </h3>
+        <p>Denmark has warned transgender citizens about travel to the US due to the lack of a non-binary gender option on visas and ESTA, following Trump's order to recognize only male and female genders.
+        </p>
+        <div class="author">
+          <img src="photos/user.jpg" alt="Author 1">
+          <div class="author-info">
+            <span>Jenny Kim</span>
+            <span>21 Feb 2025 - 5 min read</span>
+          </div>
+        </div>
+      </div>
+
+  
+    </div>
+
+    
+      
+
+
+    
+    <section id="astro" class="justify-content-center">
+      <div class="row  py-3 px-3 justify-content-center">
+      <div class="flip-card mx-2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/aries.jpg" alt="Aries" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back">
+            <h4 style="font-weight: bold;">Aries (March 21 - April 19)</h4> <br>
+            <p>The first sign of the zodiac, Aries loves to be number one. Naturally, this dynamic fire sign is no stranger to competition. Bold and ambitious, Aries dives headfirst into even the most challenging situations and they'll make sure they always come out on top. </p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/taurus.jpg" alt="taurus" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Taurus (April 20 - May 20)</h4><br>
+            <p>Taurus is the sign most likely to indulge in a six-hour bath, a Swedish massage, and a decadent dessert spread. As an earth sign, they enjoy relaxing in peaceful, sensory-rich environments with soothing sounds, aromas, and delicious flavors.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/gemini.jpg" alt="gemini" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Gemini (May 21 - June 20)</h4><br>
+            <p>Gemini is the sign that wishes for a clone to handle all their interests. Spontaneous, playful, and curious, they’re driven by a constant need to explore, symbolized by the celestial twins.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/cancer.jpg" alt="cancer" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Cancer (June 21 - July 22)</h4><br>
+            <p>Cancer, represented by the crab, balances emotional and material worlds with ease. Highly intuitive, their psychic abilities manifest in real-life situations. Like their shell, Cancers protect their emotions fiercely, and earning their trust is key to truly knowing them.</p> 
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row justify-content-center py-3 px-3">    
+      <div class="flip-card mx-2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/leo.webp" alt="leo" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Leo (July 23 - August 22)    </h4><br>
+            <p>Leo, represented by the lion, is passionate, loyal, and dramatic. As fiery kings and queens of the zodiac, they thrive in the spotlight, embracing their royal, vivacious nature and love for celebration.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/virgo.jpg" alt="virgo" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Virgo (August 23 - September 22)
+            </h4><br>
+            <p>Virgo, the logical and practical earth sign, is known for their systematic approach to life. Represented by the goddess of wheat, they thrive in the material world, constantly perfecting skills through diligent practice and a focus on detail.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/libra.jpg" alt="Libra" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Libra (September 23 - October 22)
+            </h4><br>
+            <p>Libra is defined by balance, harmony, and justice. Represented by the scales, this cardinal air sign seeks equilibrium in all aspects of life, especially in matters of the heart.</p> 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/scorpio.jpg" alt="Scorpio" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Scorpio (October 23 - November 21)
+            </h4><br>
+            <p>Scorpio is mysterious and often misunderstood. As a water sign, they harness emotional energy and psychic abilities, gaining wisdom and courage from both the seen and unseen realms. This makes them one of the most dynamic and complex signs.</p> 
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row justify-content-center py-3 px-3">  
+      <div class="flip-card mx-2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/sagittarius.jpg" alt="sagittarius" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Sagittarius (November 22 - December 21)
+            </h4><br>
+            <p>Sagittarius, represented by the archer, is a boundless seeker of knowledge. As the last fire sign, they pursue geographical, intellectual, and spiritual adventures with the energy of blazing arrows.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/capricorn.jpg" alt="taurus" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Capricorn (December 22 - January 19)</h4><br>
+            <p>For Capricorn, time is the most valuable resource. Represented by the sea goat, they climb steadily to the top with patience, perseverance, and dedication, skillfully navigating both material and emotional realms.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/aquarius.jpg" alt="taurus" style="width:280px;height:370px; border-radius: 15px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Aquarius (January 20 - February 18)
+            </h4><br>
+            <p>Aquarius, the last air sign, is innovative, progressive, and revolutionary. Represented by the water bearer, they are deeply humanitarian and dedicated to making the world a better place.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="astro/pisces.jpg" alt="taurus" style="width:280px;height:370px; border-radius: 20px;">
+          </div>
+          <div class="flip-card-back" >
+            <h4 style="font-weight: bold;">Pisces (February 19 - March 20)
+            </h4><br>
+            <p>Pisces, the most intuitive and empathetic sign, absorbs lessons from all the other signs. Represented by two fish swimming in opposite directions, they balance between fantasy and reality, embodying deep sensitivity and insight.</p> 
+          </div>
+        </div>
+      </div>
+      </div><br><br>
+    </section> 
+   </div>  
+
+   <section class="contact-section" id="subscribe">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6"><br><br>
+                <h2>Stay Connected with Us!</h2>
+            </div>
+            <div class="col-md-6">
+              <p>Get the latest news and insights delivered directly to your inbox every week.</p>
+                <form>             
+                  <input type="email" class="form-control"  placeholder="Email Address"  required>
+                  <div  class="form-text" style="color: rgb(172, 171, 171);">We'll never share your email with anyone else.</div><br>
+                <div>
+                  <button type="submit"  class="btn" style="border-radius: 13px; font-weight: bold;">Subscribe</button>
+                </div>
+              </form>
+            </div>
+            
+        </div>
+    </div>
+  </section>
+   
+
+   <footer class="custom-footer bg-light ">
+    <div class="container"><br>
+      <div class="text-center footer-links"> 
+        <h3 style="font-family: cursive;">News</h3><br>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+        <a href="#">Latest News</a>
+        <a href="#subscribe">Subscribe Now</a>
+      </div><br><hr><br>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start copyright" style="font-size: 0.9rem;">
+                &copy; 2025 Your News Website. All rights reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script>
+  
+  $('.actions .button.big').on('click', function(e){
+		e.preventDefault();
+		$(this).text( $(this).text() == "Continue Reading" ? "Show Less" : "Continue Reading" );
+		$(this).closest('article.post').find('.hidden-content').slideToggle()
+	})
+
+  $('.actions .button.small').on('click', function(e){
+		e.preventDefault();
+		$(this).text( $(this).text() == "Continue Reading" ? "Show Less" : "Continue Reading" );
+		$(this).closest('article.post').find('.hidden-content1').slideToggle()
+	})
+  function togglePopup() {
+            const overlay = document.getElementById('popupOverlay');
+            overlay.classList.toggle('show');
+ }
+  
+   </script>
+
+</body>
+</html>
